@@ -50,27 +50,23 @@
         <p> 
           Hello! I am a Ph.D student at KAIST AI, advised by <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>. <br> 
         </p>
-        <p>  
-          I am interested in creating intelligent agents that can continually learn, adapt, and generalize in dynamic environments. 
-          To do so, I am interested in self-supervised learning, reinforcement learning, and its applications to gaming and robotics.
+        <p>
+          I am currently interested in utilizing prior knowledge which include pre-trained models, large-scale trajectory datasets, or XX 
+          for learning effective behaviors for robotics.
+          To do so, I am mainly interest in reinforcement learning, self-supervised learning, and their applications to robotics.
         </p>
         <p>
-          Previously, I received M.S at KAIST, and B.S at Korea University. 
-          During the 1st half of 2024, I interned in the RL team at Sony AI, mentored by 
-          <a href="https://takuseno.github.io/">Takuma Seno</a> and 
-          <a href="https://kausubbu.github.io/">Kaushik Subramanian</a>. 
-          In winter 2022, I interned at RL team at Kakao Enterprise, working closely with 
-          <a href="https://github.com/Kyushik">Kyushik Min</a>. 
-          In summer 2020, I interned at RL team at Neowiz Games, focusing on turn-based strategy game, 
-          <a href="https://www.browndust.app/ko">BrownDust</a>.
+          Previously, my B.S at Korea University, 2021. 
+          During the winter of 2022, I interned at the Recommendation team at Naver Labs Europe, working closely with 
+          Deffayet Romain and . 
+          
         </p>
 
         <p style="text-align:center">
-          <a href="mailto:joonleesky@kaist.ac.kr">Email</a> &nbsp/&nbsp
+          <a href="mailto:godnpeter@kaist.ac.kr">Email</a> &nbsp/&nbsp
           <a href="data/hojoonlee202405cv.pdf">CV</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://www.linkedin.com/in/hojoon-lee-6872a4222/">LinkedIn</a> &nbsp/&nbsp
-          <a href="https://github.com/joonleesky/">Github</a>
+          <a href="https://scholar.google.com/citations?hl=ko&user=FQJHN6QAAAAJ=en">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://github.com/godnpeter/">Github</a>
         </p>
 
       </div>
@@ -87,9 +83,8 @@
     <div class="row">
       <p>
         <ul>
-          <li><b>02-08.2024</b>. I will be joining a Gran Turismo team at Sony AI, Tokyo, as a research intern.</li>
-          <li><b>05.2024.</b> 3 RL papers accepted @ ICML'24: <a href="#icml2024hnt">Hare & Tortoise</a>, <a href="#icml2024atari-pb">ATARI-PB</a>, and <a href="#icml2024coin">CoIN</a>.
-          <li><b>09.2023.</b> 2 RL papers accepted @ NeurIPS'23: <a href="#neurips2023plastic">PLASTIC</a> and <a href="#neurips2023disco-dance">DISCO-DANCE</a>.
+          <li><b>05.2024.</b> 2 RL papers accepted @ ICML'24: <a href="#icml2024coin">CoIN</a>, and <a href="#icml2024atari-pb">ATARI-PB</a>.
+          <li><b>09.2023.</b> 1 RL papers accepted @ NeurIPS'23: <a href="#neurips2023disco-dance">DISCO-DANCE</a>.
         </ul>
       </p>
     </div>
@@ -117,8 +112,8 @@
         <br>
         <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
         Byungkun Lee,
-        <strong>Hojoon Lee</strong>,
-        Dongyoon Hwang,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>,
+        <strong>Dongyoon Hwang</strong>,
         Donghu Kim,
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
         <br>
@@ -130,37 +125,34 @@
         </p>
       </div>
     </div>
-
+    
     <div class="row common-rows" style="margin-top: 3%">
-        <div class="col-xs-12 custom-col-sm-3 left-column">
-          <img src="pictures/icml2024hnt.png" alt="icml2024hnt" class="paper-images">
-      </div>
-      <div class="col-xs-12 col-sm-9 right-column">
+    <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column">
         <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#b5ead7">Plasticity</span>
+        <span style="background-color:#f1f1b2">Adaptation</span>
         <br>
-        <a href="data/icml2024hnt.pdf" id="icml2024hnt">
-          <papertitle>
-            Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks
-          </papertitle>
-        </a>
+        <papertitle>
+            CoIN: A Simple Convolution INjector for Vision Transformer. Towards Effective Adaptation in Visuo-Motor Control
+        </papertitle>
         <br>
-        <strong>Hojoon Lee</strong>,
-        Hyeonseo Cho,
+        <strong>Donyoon Hwang*</strong>, 
+        Byungkun Lee*,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>,
         <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
-        Donghu Kim,
-        Dugki Min,
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
-        <a href="https://clarelyle.com/">Clare Lyle</a>.
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
         <br>
         <em>ICML'24</em>.
         <br><br>
         <p style="margin-top: -1%;"> 
-            To allow the network to continually adapt and generalize, we introduce Hare and Tortoise architecture, 
-            inspired by the complementary learning system of the human brain.
+            Introducing an add-on convolution module for pre-trained ViT models, 
+            enhancing adaptability for vision-based motor control by injecting locality and translation equivariant biases.
         </p>
-      </div>
     </div>
+    </div>
+
 
     <div class="row common-rows" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
@@ -175,9 +167,9 @@
             </papertitle>
           <br>
           Donghu Kim*,
-          <strong>Hojoon Lee*</strong>,
+          <a href="https://joonleesky.github.io/">Hojoon Lee*</a>,
           Kyungmin Lee*,
-          Dongyoon Hwang,
+          <strong>Dongyoon Hwang</strong>,
           <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
           <br>
           <em>ICML'24</em>.
@@ -187,71 +179,6 @@
           </p>
         </div>
       </div>
-    
-    <div class="row common-rows" style="margin-top: 3%">
-    <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
-    </div>
-    <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#f1f1b2">Adaptation</span>
-        <br>
-        <papertitle>
-            CoIN: A Simple Convolution INjector for Vision Transformer. Towards Effective Adaptation in Visuo-Motor Control
-        </papertitle>
-        <br>
-        Donyoon Hwang*, 
-        Byungkun Lee*,
-        <strong>Hojoon Lee</strong>,
-        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
-        <br>
-        <em>ICML'24</em>.
-        <br><br>
-        <p style="margin-top: -1%;"> 
-            Introducing an add-on convolution module for pre-trained ViT models, 
-            enhancing adaptability for vision-based motor control with injecting locality and translation equivariant biases.
-        </p>
-    </div>
-    </div>
-
-    <div class="row common-rows" style="margin-top: 3%">
-    <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/neurips2023plastic.png" alt="neurips2023plastic" class="paper-images" style="width:92%">
-    </div>
-    <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#b5ead7">Plasticity</span>
-        <br>
-        <a href="https://arxiv.org/abs/2306.10711" id="neurips2023plastic">
-        <papertitle>
-            PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning
-        </papertitle>
-        </a>
-        <br>
-        <strong>Hojoon Lee*</strong>, 
-        <a href="https://hanseuljo.github.io">Hanseul Cho*</a>, 
-        <a href="https://mynsng.github.io/">Hyunseung Kim*</a>, 
-        Daehoon Gwak, 
-        Joonkee Kim, 
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
-        <a href="https://fbsqkd.github.io/">Se-Young Yun</a>,
-        <a href="https://chulheeyun.github.io/">Chulhee Yun</a>.
-        <br>
-        <em>NeurIPS'23</em>.
-        <br>
-        <a href="https://arxiv.org/abs/2306.10711">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/plastic">code</a> /
-        <a href="https://drive.google.com/file/d/1-QeWhom9l7mUt3m7zJV-_DIGMtL7F2Cq/view?usp=sharing">slide</a> /
-        <a href="https://drive.google.com/file/d/1-OTP_-rw2x-csjsJ9jH7utuHw9zDxsJc/view?usp=sharing">poster</a> /
-        <a href="data/neurips2023plastic.txt">Bibtex</a>
-        <br><br>
-        <p style="margin-top: -1%;"> 
-            For sample-efficient RL, the agent needs to quickly adapt to various inputs (input plasticity) and outputs (label plasticity). 
-            We present PLASTIC, which maintains both input and label plasticity by identifying smooth local minima and preserving gradient flow. 
-        </p>
-    </div>
-    </div>
 
     <div class="row common-rows" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
@@ -269,8 +196,8 @@
         <br>
         <a href="https://mynsng.github.io/">Hyunseung Kim*</a>, 
         Byungkun Lee*,
-        <strong>Hojoon Lee</strong>, 
-        Dongyoon Hwang,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>, 
+        <strong>Dongyoon Hwang</strong>,
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
         <br>
         <em>NeurIPS'23</em>.
@@ -301,9 +228,9 @@
         </papertitle>
         </a>
         <br>
-        <strong>Hojoon Lee</strong>,
+        <a href="https://joonleesky.github.io/">Hojoon Lee</a>,
         Koanho Lee, 
-        Dongyoon Hwang, 
+        <strong>Dongyoon Hwang</strong>, 
         Hyunho Lee, 
         Byungkun Lee, 
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
@@ -323,38 +250,6 @@
 
 
     <div class="row common-rows" style="margin-top: 3%">
-    <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/cikm2023strap.png" alt="cikm2023strap" class="paper-images" style="width: 90%">
-    </div>
-    <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#C9D3D8">Data Mining</span>
-        <br>
-        <a href="https://dl.acm.org/doi/10.1145/3583780.3615168" id="cikm2023strap">
-        <papertitle>
-            ST-RAP: A Spatio-Temporal Framework for Real Estate Appraisal 
-        </papertitle>
-        </a>
-        <br>
-        <strong>Hojoon Lee*</strong>,
-        Hawon Jung*,
-        Byungkun Lee*, 
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
-        <br>
-        <em>CIKM'23 (short)</em>.
-        <br>
-        <a href="https://arxiv.org/abs/2308.10609v1">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/STRAP">code</a> /
-        <a href="https://drive.google.com/file/d/1ht5I6-PQmzlVzF-1YQCkBO1XcrVGbjk7/view?usp=sharing">poster</a> /
-        <a href="data/cikm2023strap.txt">Bibtex</a>
-        <br><br>
-        <p style="margin-top: -1%;"> 
-        We construct a real estate appraisal framework that integrates spatial and temporal aspects, 
-        validated using a dataset of 3.6M real estate transactions in South Korea from 2016 to 2020.          
-        </p>
-    </div>
-    </div>
-
-    <div class="row common-rows" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/sigir2022irs.png" alt="sigir2022irs" class="paper-images" style="margin-left:5%">
         </div>
@@ -368,8 +263,8 @@
             </papertitle>
             </a>
             <br>
-            <strong>Hojoon Lee</strong>,
-            Dongyoon Hwang,
+            Hojoon Lee,
+            <strong>Dongyoon Hwang</strong>,
             Kyushik Min,
             <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
             <br>
@@ -401,8 +296,8 @@
             </papertitle>
             </a>
             <br>
-            <strong>Hojoon Lee*</strong>,
-            Dongyoon Hwang*,
+            Hojoon Lee*,
+            <strong>Dongyoon Hwang*</strong>,
             <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
             Byungkun Lee, 
             <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
@@ -417,68 +312,6 @@
             <p style="margin-top: -1%;">                         
                 We gathered data from 280,000 matches played by the top 0.3% rank players in Korea for League of Legends. 
                 From this, we developed DraftRec, a personalized champion recommendation system aimed at maximizing players' win rates.   
-            </p>
-        </div>
-    </div>
-
-    <div class="row common-rows" style="margin-top: 3%">
-        <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/cog2022gunshot.png" alt="cog2022gunshot" class="paper-images" style="margin-left:3%;">
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-            <span style="background-color:#C9D3D8">Data Mining</span>
-            <span style="background-color:#c9d2fe">Game</span>
-            <br>
-            <a href="https://arxiv.org/abs/2210.05917" id="cog2022gunshot">
-            <papertitle>
-                Enemy Spotted: In-game Gun Sound Dataset for Gunshot Classification and Localization
-            </papertitle>
-            </a>
-            <br>
-            Junwoo Park, 
-            Youngwoo Cho, 
-            Gyuhyeon Sim, 
-            <strong>Hojoon Lee</strong>,
-            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
-            <br>
-            <em>COG'22</em>.
-            <br>
-            <a href="https://arxiv.org/abs/2210.05917">arXiv</a> /
-            <a href="data/cog2022gunshot.txt">Bibtex</a>
-            <br><br>
-            <p style="margin-top: -1%;">                         
-                We collected a gunshot sound dataset from PlayerUnknown's Battlegrounds (PUBG). 
-                Using this data, we developed a gunshot localization model that can be applied to real-world scenarios.
-            </p>
-        </div>
-    </div>
-
-    <div class="row common-rows" style="margin-top: 3%">
-        <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/korea2019browndust.png" alt="korea2019browndust" class="paper-images" style="margin-left:3%;">
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-            <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-            <span style="background-color:#c9d2fe">Game</span>
-            <br>
-            <a href="data/korea2019browndust.pdf" id="korea2019browndust">
-            <papertitle>
-                Conquering a rule-changing game with action-releavance aware Alpha-Zero
-            </papertitle>
-            </a>
-            <br>
-            <strong>Hojoon Lee</strong>,
-            Dongyoon Hwang,
-            Jeesoo Woo,
-            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
-            <br>
-            <em>Preprint'19</em>.
-            <br>
-            <a href="data/korea2019browndust.pdf">poster</a>
-            <br><br>
-            <p style="margin-top: -1%;">                         
-                We've developed an AI agent for the turn-based strategy game BrownDust. 
-                To enhance learning efficiency, we've designed feature representations and specified architectures for embedding the game characters.
             </p>
         </div>
     </div>
@@ -511,54 +344,12 @@
         </papertitle>
         <br>
         <ul>
-          <li>Travel Award ($3,000 as awards), Crevisse Partners, 2023.</li>
           <li>SIGIR Best Short Paper Honorable Mention, 2022.</li>
-          <li>Korea Government Full Scholarship ($10,000 per year), 2020, 2021.</li>
-          <li>Silver Prize ($2,000 as awards), Korea University Graduation Project, 2019.</li>
-          <li>College Scholarship ($4,000 as awards), Seongnam Scholarship Foundation, 2017.</li>
-          <li><a href="https://www.army.mil/article/180976/area_ii_chapter_sergeant_audie_murphy_clubgeneral_paik_leadership_award_induction_ceremony">General Paik Sun Yup Leadership Award</a>
-            , LTG Thomas.S.Vandal, U.S Army, 2017.</li>
+          <li>Silver Prize ($2,000 as awards), Korea University Graduation Project, 2021.</li>
         </ul>
       </div>
     </div>
     <br>
-
-    <div class="row common-rows">
-      <div class="col-xs-12 col-sm-3 left-column">
-        <img src="pictures/talk.png" class="paper-images">
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <papertitle>Talks
-        </papertitle>
-        <br>
-        <ul>
-          <li>
-            <a href="data/plastic2024talk.pdf">
-              Towards Plastic Neural Network
-            </a>.
-            Sony AI, Tokyo, March 2024.
-          </li>
-          <li>
-            <a href="data/plastic2024talk.pdf">
-                Towards Plastic Neural Network
-            </a>.
-            Konkuk University DMIS Lab, Seoul, Feb 2024.
-          </li>
-          <li>
-            <a href="data/pretrain2023talk.pdf">
-                Pre-training for Intelligent Agent
-            </a>.
-            RL Korea, Seoul, Jan 2024.
-          </li>
-          <li>
-            <a href="data/pretrain2023talk.pdf">
-                Pre-training for Intelligent Agent
-            </a>.
-            Crevisse Partners, Seoul, Dec 2023.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
 
   <div class="container">
