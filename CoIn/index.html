@@ -30,6 +30,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="../../stylesheet.css">
     <link rel="stylesheet" href="css/app.css?v=20230203">
@@ -93,17 +95,54 @@
             </div>
         </div>
 
+
+        <style>
+            .publication-links .btn {
+                border-radius: 50px;
+                padding: 10px 20px;
+                margin: 5px;
+            }
+            .publication-links .btn-dark {
+                background-color: #363636;
+                color: #fff;
+            }
+            .publication-links .btn-dark:hover {
+                background-color: #2d2d2d;
+                color: #fff;
+            }
+            .publication-links .icon {
+                margin-right: 5px;
+            }
+        </style>
+
         <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <a href="data/coin_paper.pdf">
-                            <image src="pictures/coin_front_page.png" height="60px">
-                                <h4><strong>Paper</strong></h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://arxiv.org/abs/2406.06072"><h4><b>[Paper]</b></h4></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dojeon-ai/CoIn"><h4><b>[Code]</b></h4></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4>
+                    <span class="font-weight-normal"><strong style="font-size: 1em;">TL;DR:</strong> Add-on module which injects <b>convolutions</b> into pretrained ViTs for Visuo-motor Control</span>
+                </h4>
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <br>
+            <div class="col-md-12">
+                <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                    <img src="/CoIn/pictures/performance.png", width="60%">
+                </p>
+            </div>
         </div>
 
         <div class="row">
@@ -121,348 +160,129 @@
                 </p>
             </div>
         </div>
-        <!--
+
+        <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <h2>
-                    <span class="font-weight-normal">Motivation</span>
+                    Motivation
                 </h2>
-            </div>
-            <div class="col-md-12">
-                <h3>
-                    <span class="font-weight-normal">Is the <b>purely unsupervised</b> assumption of unsupervised RL ideal in the real-world?</span>
-                </h3>
-            </div>
-            <div class="col-md-12">
                 <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/diayn_motivation.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                        <h4 class="text-center top5 bottom5">
-                            <b>DIAYN</b>
-                        </h4>
-                    </div>
-                    <div class="col-md-3">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/lsd_motivation.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                        <h4 class="text-center top5 bottom5">
-                            <b>LSD</b>
-                        </h4>
-                    </div>
-                    <div class="col-md-3">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/rnd_motivation.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                        <h4 class="text-center top5 bottom5">
-                            <b>RND</b>
-                        </h4>
-                    </div>
-                    <div class="col-md-3">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/metra_motivation.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                        <h4 class="text-center top5 bottom5">
-                            <b>METRA</b>
-                        </h4>
-                    </div>
-                </div>
+                <p>
+                    The advent of open-sourced, large-scale ViTs pretrained with extensive web-scale datasets provides generalized, ready-to-go visual representations. 
+                    However, their <u>weak inductive bias, though beneficial for scaling, impedes effective visuo-motor control.</u> By integrating convolutional biases for spatial locality and translation equivariance, these limitations can be addressed.
+                </p>
             </div>
-            <div class="col-md-12">
-                <p class="text-justify">
-                Despite notable advancements in unsupervised skill discovery (USD) algorithms, acquiring diverse policies in enviornments with large state and action spaces remains a significant challenge. 
-                </p>
-                <p class="text-justify">
-                Two major issues arise when training agents with USD in these complex enviornments.
-                <ul>
-                    <li>
-                        First, since the vast state and action spaces enable the agent to develop a wide variety of behaviors, learning <b>simple behaviors</b> like standing may be feasible (e.g., DIAYN, LSD), 
-                        but mastering complex behaviors such as walking or running can take an exceedingly long time.
-                    </li>
-                    <li>
-                        Second, agent can develop <b>undesirable and risky behaviors</b> during training, such as tripping, or rolling (e.g., RND, METRA).
-                    </li>
-                </ul>
-                </p>
+
+            <div class="col-md-6">
+                <img src="/CoIn/pictures/motivation.png" alt="Overview" class="img-responsive">
             </div>
         </div>
-
+        
+        <hr>
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <span class="font-weight-normal">Method overview</span>
+                    <span class="font-weight-normal">Method: Convolution Injector (CoIn)</span>
                 </h2>
-            </div>
-            <div class="col-md-12">
-                <p class="text-justify">
-                To address these challenges, we propose <b>DoDont</b>, a skill discovery algorithm that integrates USD objectives with intended behavioral goals. Instead of relying on a hand-designed reward, DoDont <i>learns a reward function from a small set of instruction videos</i> that demonstrate desirable and undesirable behaviors. 
-                <br><br>
-                DoDont consists of two stages.
-                </p>
+                <div class="col-md-12">
+                    <br>
                     <div class="col-md-12">
-                        <p>
-                            <img src="img/DoDont_project_page.png" style="width:100%;">
+                        <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                            <img src="/CoIn/pictures/model.png", width="70%">
                         </p>
                     </div>
+                </div>
+                <br>
                 <p class="text-justify">
-                <b>Stage 1. Train instruction network with instruction videos </b> <br>
-                DoDont starts by collecting instruction videos of desirable (Do's) and undesirable behaviors (Don'ts). <br>
-                We then train an instruction network which assigns higher values to desirable behaviors and lower values to undesirable ones.
-                </p>
+                    <b>CoIn</b> is a simple and lightweight add-on module (3.6% of additional parameters to a standard ViT-B/16) 
+                    designed to exploit the strengths of pretrained ViTs while providing advantageous inductive biases 
+                    essential for visual control tasks.
 
-            </p>
-            <p class="text-justify">
-            <b>Stage 2. Skill learning with instruction network </b> <br>
-            We integrate the learned instructioin network into the online distance-maximizing skill discovery algorithm. <br>
-            We set the trained instruction network as the distance metric in the distance-maximizing skill discovery framework.
-            </p>
+                    While leaving the (a) ViT architecture untouched, 
+                    (b) <b>CoIn</b> incorporates two key modules: <u>a CNN encoder</u>, 
+                    which captures spatial locality and translation equivariance rich features from the input image, 
+                    and a <u>cross attention module</u>, which introduces such biases into the ViT patch token embeddings. 
+                    Notably, these enhancements are seamlessly integrated without any modification to the overall ViT architecture.
+                </p>
             </div>
         </div>
 
+        <hr>
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <span class="font-weight-normal">Objective function of DoDont</span>
+                    <span class="font-weight-normal">Experimental Results</span>
                 </h2>
-            </div>
-            <div class="col-md-12">
-            <p class="text-justify">
-            <h3 class="text-center desktop-only">
-                $$\begin{aligned}
-                \text{Maximize} \ \ r(s, z, s') = \hat{p}_{\psi}(s, s')(\phi(s') - \phi(s))^\top z \quad
-                \text{s.t.} \ \ \|\phi(s) - \phi(s')\|_2 \leq 1.
-                \end{aligned}$$
-            </h3>
-            <p class="text-justify">
-                This equation represents the final objective of DoDont. Essentially, this can be interpreted as simply multiplying instruction network \(\hat{p}_{\psi}\) to the original learning objective function of METRA. For a detailed derivation, please refer to the main paper.
-            </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    <span class="font-weight-normal">Locomotion results</span>
-                </h2>
-            </div>
-            <div class="col-md-12">
                 <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/DoDont_Quadruped.png">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/DoDont_Quadruped.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>DoDont</b> (4-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-                <h5 class="text-center top5 bottom5">
-                    (Do's: 4 run videos, Don'ts: 4 random action videos)
-                </h5>
-            </div>
-
-            <div class="col-md-12">
-                <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/only_one_plot.jpeg">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/DoDont_only_one.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>DoDont (One video)</b> (4-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-                <h5 class="text-center top5 bottom5">
-                    (Do's: one run video, Don'ts: one random action video)
-                </h5>
-            </div>
-
-            <div class="col-md-12">
-                <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/METRA_Quadruped.png">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/metra_quadruped.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>METRA</b> (4-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-            </div>
-
-            <div class="col-md-12">
-                <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/metra_dagger_plot.jpeg">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/metra_dagger_quadruped.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>METRA\(\dagger\) (using task reward)</b> (4-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-            </div>
-
-            <div class="col-md-12">
-                <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/smerl_plot.jpeg">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/smerl_quadruped.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>SMERL</b> (16-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-            </div>
-
-            <div class="col-md-12">
-                <br>
-                <div class="vertical-align">
-                    <div class="col-md-3">
-                        <p>
-                            <img class="img-responsive center-block" src="img/dgpo_plot.jpeg">
-                        </p>
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            <video class="center-block" width="100%" autoplay loop muted controls playsinline>
-                                <source src="img/DGPO_quadruped.mp4" type="video/mp4">
-                            </video>
-                        </p>
-                    </div>
-                </div>
-                <h4 class="text-center top5 bottom5">
-                    <b>DGPO</b> (16-D skills, 2 rollouts each for 9 randomly sampled skills)
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    <span class="font-weight-normal">Manipulation results</span>
-                </h2>
-            </div>
-            <div class="col-md-12">
-                <p>
-                    <video class="center-block" width="80%" autoplay loop muted controls playsinline>
-                        <source src="img/DoDont_kitchen.mp4" type="video/mp4">
-                    </video>
-                </p>
-                <h4 class="text-center top5 bottom5">
-                    <b>DoDont</b> (24 skills, 2 rollouts each)
-                </h4>
-                <h5 class="text-center top5 bottom5">
-                    (Do's: D4RL kitchen dataset, Don'ts: Random action videos)
-                </h5>
-            </div>
-
-            <div class="col-md-12">
-                <p>
-                    <video class="center-block" width="80%" autoplay loop muted controls playsinline>
-                        <source src="img/METRA_kitchen.mp4" type="video/mp4">
-                    </video>
-                </p>
-                <h4 class="text-center top5 bottom5">
-                    <b>METRA</b> (24 skills, 2 rollouts each)
-                </h4>
-
-            </div>
-
-            <div class="col-md-12">
-                <p>
-                    <video class="center-block" width="80%" autoplay loop muted controls playsinline>
-                        <source src="img/metra_dagger_kitchen.mp4" type="video/mp4">
-                    </video>
-                </p>
-                <h4 class="text-center top5 bottom5">
-                    <b>METRA\(\dagger\) (using task reward)</b> (24 skills, 2 rollouts each)
-                </h4>
-            </div>
-
-            <div class="col-md-12">
-                <p>
-                    <video class="center-block" width="80%" autoplay loop muted controls playsinline>
-                        <source src="img/smerl_kitchen.mp4" type="video/mp4">
-                    </video>
-                </p>
-                <h4 class="text-center top5 bottom5">
-                    <b>SMERL</b> (24 skills, 2 rollouts each)
-                </h4>
-            </div>
-
-            <div class="col-md-12">
-                <p>
-                    <video class="center-block" width="80%" autoplay loop muted controls playsinline>
-                        <source src="img/dgpo_kitchen.mp4" type="video/mp4">
-                    </video>
-                </p>
-                <h4 class="text-center top5 bottom5">
-                    <b>DGPO</b> (24 skills, 2 rollouts each)
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
                 <p class="text-justify">
-                    The website template was borrowed from <a href="http://seohong.me/">Seohong Park</a> and <a href="https://jonbarron.info/">Jon Barron</a>.
+                    We finetuned various pretrained ViTs with CoIn on 12 control tasks across three domains (Adroit, MetaWorld, DMC).
+                    The integration of <b>CoIn</b> with various pretrained ViTs <b>leads to notable performance enhancements 
+                    across all pretrained ViT models and their associated control tasks.</b> 
                 </p>
             </div>
+
+            <div class="col-md-12">
+                <br>
+                <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                    <img src="/CoIn/pictures/table1.png", width="100%">
+                </p>
+            </div>
+
+            <div class="col-md-12">
+                <br>
+                <p class="text-justify">
+                    In both the <b>(Left)</b> full finetuning and <b>(Right)</b>  Peft finetuning 
+                    (freezing the visual encoder and solely finetuning lightweight additional modules) 
+                    scenarios against adapters, <b>CoIn consistently outperformed other adapter baselines.</b>
+
+                </p>
+            </div>
+
+
+            <div class="col-md-6">
+                <br>
+                <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                    <img src="/CoIn/pictures/table3-1.png", width="100%">
+                </p>
+            </div>
+            
+            <div class="col-md-6">
+                <br>
+                <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                    <img src="/CoIn/pictures/table3-2.png", width="100%">
+                </p>
+            </div>
+
+            <div class="col-md-12">
+                <br>
+                <p class="text-justify">
+                    ViT + CoIn demonstrates following improvements: (a) capturing <b>high-frequency</b> signals, 
+                    (b) improving <b>translation equivariance,</b> 
+                    and (c) enhancing <b>focus on crucial regions for visuo-motor control</b>.
+                </p>
+            </div>
+            <div class="col-md-12">
+                <br>
+                <div class="col-md-12">
+                    <p width="50%"  height="auto" style="margin-right:auto;margin-left:auto;text-align:center;">
+                        <img src="/CoIn/pictures/table2.png", width="100%">
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-justify">
+                        The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="https://jonbarron.info/">Jon Barron</a>.
+                    </p>
+                </div>
+            </div>
+
+
+
         </div>
-        -->
 
     
 </body>
