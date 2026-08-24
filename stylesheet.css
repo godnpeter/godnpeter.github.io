@@ -158,6 +158,7 @@ span.highlight {
 
 .paper-images{
   width: 100%;
+  height: auto;
   margin: auto;
   display: block;
 }
@@ -218,8 +219,8 @@ span.highlight {
 }
 
 .custom-col-sm-3 {
-    flex: 0 0 25%; 
-    max-width: 22%;
+    flex: 0 0 31%;
+    max-width: 31%;
     margin-right: auto;
 }
 
@@ -233,4 +234,167 @@ span.highlight {
       padding-bottom: 10px;
     }
   }
+
+/* =========================================================
+   Publication entries (joonleesky.github.io 스타일)
+   ========================================================= */
+.pub-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.pub-row > .custom-col-sm-3 {
+  display: flex;
+  flex: 0 0 31%;
+  max-width: 31%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding-left: 15px;
+  padding-right: 12px;
+}
+
+.pub-row > .right-column {
+  position: relative;
+  top: -3px;
+  flex: 0 0 69%;
+  max-width: 69%;
+  align-self: center;
+  margin: 0 !important;
+  padding-left: 12px;
+  padding-right: 15px;
+}
+
+.pub-row .paper-images {
+  display: block;
+  width: 100% !important;
+  aspect-ratio: 4 / 3;
+  height: auto !important;
+  object-fit: cover;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Removes extra top space if a publication text column starts with <br> */
+.pub-row .right-column > br:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .pub-row {
+    display: block;
+    margin-top: 22px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .pub-row > .custom-col-sm-3,
+  .pub-row > .right-column {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pub-row > .right-column {
+    top: 0;
+  }
+
+  .pub-row .paper-images {
+    max-width: 260px;
+    height: auto !important;
+    margin: 0 auto 12px auto !important;
+  }
+}
+
+/* =========================================================
+   Work experience section
+   ========================================================= */
+.experience-section .section-heading-rows {
+  margin-left: 0 !important;
+  margin-top: 36px !important;
+  margin-bottom: 10px !important;
+}
+
+.experience-section .work-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0 !important;
+}
+
+.experience-section .work-logo-col {
+  display: flex;
+  flex: 0 0 22%;
+  max-width: 22%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 32px;
+}
+
+.experience-section .work-text-col {
+  position: relative;
+  top: -2px;
+  display: flex;
+  flex: 0 0 76%;
+  max-width: 76%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 15px;
+}
+
+.experience-section .work-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+}
+
+.experience-section .work-logo {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+
+.experience-section ul {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: -1.5em;
+}
+
+@media screen and (max-width: 576px) {
+  .experience-section .work-row {
+    display: block;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .experience-section .work-logo-col,
+  .experience-section .work-text-col {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .experience-section .work-text-col {
+    top: 0;
+  }
+
+  .experience-section .work-logo-box {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
 
