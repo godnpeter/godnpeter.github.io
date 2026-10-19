@@ -4,93 +4,111 @@
   <!-- Home Page -->
   <url>
     <loc>https://godnpeter.github.io/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Individual Publications -->
   <url>
+    <loc>https://godnpeter.github.io/index.html#preprint2026pointmapvla</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://godnpeter.github.io/index.html#preprint2026flashdex</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://godnpeter.github.io/index.html#preprint2026pointmap</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://godnpeter.github.io/index.html#corl2026pam</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://godnpeter.github.io/index.html#corl2026phuma</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#iros2026hamster</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#colm2025chess</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://godnpeter.github.io/index.html#preprint2025phuma</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#iclr2025simba</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#neurips2024dodont</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#icml2024coin</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#icml2024atari-pb</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#tors2024sardine</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#neurips2023disco-dance</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#icml2023simtpr</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#sigir2022irs</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#www2022draftrec</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://godnpeter.github.io/index.html#preprint2021moimixer</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
