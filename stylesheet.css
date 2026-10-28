@@ -236,6 +236,32 @@ span.highlight {
   }
 
 /* =========================================================
+   Profile links (Email / CV / Scholar / LinkedIn / X / GitHub)
+   ========================================================= */
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 22px;
+}
+
+.profile-links a {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.profile-links a:focus,
+.profile-links a:hover {
+  color: #f09228;
+}
+
+.profile-links i {
+  margin-right: 6px;
+}
+
+/* =========================================================
    Publication entries (joonleesky.github.io 스타일)
    ========================================================= */
 .pub-row {
